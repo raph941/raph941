@@ -12,7 +12,7 @@
 
 Am a software Engineer from Nigeria, super excited to be contributing into awesome projects that impact lives across the world,
 Am passionate about solving problems through code, bringing ideas to live, sharing and learning as i collaborate with brilliant minds on thesame journey.
-Am currently working on an open source developer tool (`SourceGraph`), with Gitstart.
+Am currently working on an open source developer tool (`SourceGraph`).
 
 Feel free to reach me on [email](mailto:raph941@gmail.com), happy to help.
 
