@@ -1,3 +1,5 @@
+import { mediaQueries } from "./media";
+
 export const lightTheme = {
   colors: {
     dark: "#333",
@@ -17,6 +19,7 @@ export const lightTheme = {
     medium: "2em",
     large: "3em",
   },
+  mediaQueries
 };
 
 export const darkTheme = {
@@ -38,6 +41,7 @@ export const darkTheme = {
     medium: "2em",
     large: "3em",
   },
+  mediaQueries
 };
 
 export type ThemeType = typeof lightTheme;

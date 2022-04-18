@@ -41,19 +41,19 @@ const NavBar = () => {
           navbar
         >
           <Nav navbar>
-            <NavItem>
+            <NavItem className="px-sm-3">
               <NavLink href="/about/">About</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="px-sm-3">
               <NavLink href="/resume/">Resume</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="px-sm-3">
               <NavLink href="/portfolio/">Portfolio</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="px-sm-3">
               <NavLink href="/blog/">Blog</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="px-sm-3">
               <NavLink href="/contact/">Contact</NavLink>
             </NavItem>
           </Nav>

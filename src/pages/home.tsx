@@ -18,12 +18,12 @@ interface HeroProps {
 const StyledWrapper = styled.div<{ theme: ThemeType }>`
   height: 100vh;
   .hero-avatar > img {
-    height: 250px;
+    height: 350px;
   }
 
   .img-frame {
-    Height: 350px;
-    width: 350px;
+    Height: 400px;
+    width: 400px;
     border: 20px solid ${({ theme }) => theme.variableslight};
     border-radius: 50%;
     background: url(${RaphaelAvatar});
@@ -37,15 +37,20 @@ const StyledWrapper = styled.div<{ theme: ThemeType }>`
   .img-frame {
     box-shadow: 0px 2px 21px -2px rgba(0,0,0,0.75);
   }
+
+  @media ${props => props.theme.mediaQueries.mobile} {
+    .img-frame {
+      height: 250px;
+      width: 250px;
+    }
+  }
 `;
 
 const Home: FC<HeroProps> = ({ bio, imgSrc, name, title }) => (
-  <StyledWrapper className="d-flex justify-content-center align-items-center px-5 page-content pt-5 pt-sm-0">
+  <StyledWrapper className="d-flex justify-content-center align-items-center px-sm-5 page-content pt-5 pt-sm-0">
     <div className="d-flex gap-5 flex-wrap flex-sm-nowrap items-wrap">
-      <div className="hero-avatar flex-grow-1">
-        <div className="img-frame">
-
-        </div>
+      <div className="hero-avatar d-flex justify-content-center align-items-center flex-grow-1">
+        <div className="img-frame"/>
       </div>
       <div className="d-flex flex-column justify-content-center flex-grow-1">
         <StyledH4 className="text-muted">{title}</StyledH4>
